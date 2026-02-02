@@ -1,14 +1,8 @@
-function Main() {
-  return (
-    <>
-      <div>
-        <h1 className="text-4xl font-bold underline">
-          Genre Migrations: A Visual Analytics approach to analyze the flow of
-          global literary genres
-        </h1>
-      </div>
-    </>
-  );
+import React from 'react';
+import Mockup from './Mockup';
+
+function Mapview() {
+  return <Mockup />;
 }
 
-export default Main;
+export default Mapview;
