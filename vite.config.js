@@ -5,6 +5,15 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
-    tailwindcss()
+  tailwindcss()
   ],
+  server: {
+    proxy: {
+      '/api/openlibrary': {
+        target: 'https://openlibrary.org',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/openlibrary/, ''),
+      }
+    }
+  }
 })
