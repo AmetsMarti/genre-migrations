@@ -13,16 +13,7 @@ function Header(genreList, timespan, isLoad = false) {
                 borderRadius: '10px',
             }}>
                 <Typography level="h1">Genre Migrations</Typography>
-                {
-                    isLoad ? genreList.map(genre => {
-                        return genre
-                    }) : null
-                }
-                {
-                    timespan ?
-                        <Typography level="h2">{timespan[0]} - {timespan[1]}</Typography>
-                        : null
-                }
+
             </Box>
         </>
     )

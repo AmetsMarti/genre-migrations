@@ -2,31 +2,56 @@ import React from 'react';
 import Mockup from './Mockup';
 import fetchTimeSpanGenres from '../fetch_books';
 import Header from '../components/Header';
-import { useState, useEffect } from 'react';
+import GenreSelector from '../components/GenreSelector';
+import TimelineSelector from '../components/TimelineSelector';
+import { useState } from 'react';
+import { useFilters, useData } from '../store/hooks';
 
-import { Box, Typography, Footer } from '@mui/joy';
+import { Box, Typography, Stack } from '@mui/joy';
 
 function Mapview() {
-  const [genre, setGenre] = useState("Book");
-  const [timeSpan, setTimeSpan] = useState([1900, 2020]);
-  const [isLoad, setIsLoad] = useState(false);
-  const [genreList, setGenreList] = useState([]);
 
-  useEffect(() => {
-    fetchTimeSpanGenres(timeSpan[0], timeSpan[1]).then(setGenreList);
-    setIsLoad(true);
-  }, [timeSpan]);
+  // DATA actions and state
+  const { genreList } = useData();
 
-
+  // FILTER actions and state
+  const { timeSpan, selectedGenre } = useFilters();
 
   return (
     <>
-      <Header genreList={genreList} timespan={timeSpan} isLoad={isLoad} />
-      <Footer>
-        <Typography>Footer</Typography>
-      </Footer>
+      <Stack direction="row" spacing={2} sx={{
+        justifyContent: 'space-between',
+        width: '100vw',
+        height: '100vh',
+        p: "25px"
+
+      }}>
+
+        <Stack spacing={2} sx={{
+          justifyContent: 'space-between',
+          height: '100%',
+          width: "100%",
+          borderRadius: "10px",
+        }}>
+
+          <GenreSelector />
+          <TimelineSelector />
+        </Stack>
+        <Stack>
+          <Box sx={{
+            width: "200px",
+            borderRadius: "10px",
+            backgroundColor: "rgba(255, 255, 255, 0.08)",
+            height: "100%"
+          }}>
+            Right
+          </Box>
+        </Stack>
+
+      </Stack >
+
     </>
-  )
+  );
 
 
 
