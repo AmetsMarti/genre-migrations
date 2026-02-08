@@ -1,0 +1,860 @@
+[
+    {
+        "id": 1,
+        "title": "The Golden Scepter",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Rome, Italy",
+        "coords": [
+            12.4964,
+            41.9028
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Florence Shadows",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Florence, Italy",
+        "coords": [
+            11.2558,
+            43.7696
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Milanese Myths",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Milan, Italy",
+        "coords": [
+            9.19,
+            45.4642
+        ]
+    },
+    {
+        "id": "it_0",
+        "title": "Italian Fantasy Vol 0",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.85916275976913,
+            39.59059660022858
+        ]
+    },
+    {
+        "id": "it_1",
+        "title": "Italian Fantasy Vol 1",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.06466694091264,
+            40.82292051350862
+        ]
+    },
+    {
+        "id": "it_2",
+        "title": "Italian Fantasy Vol 2",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.560891235830553,
+            40.22976430777826
+        ]
+    },
+    {
+        "id": "it_3",
+        "title": "Italian Fantasy Vol 3",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.685942531049571,
+            40.47546204953372
+        ]
+    },
+    {
+        "id": "it_4",
+        "title": "Italian Fantasy Vol 4",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.685002692723621,
+            40.33160088619979
+        ]
+    },
+    {
+        "id": "it_5",
+        "title": "Italian Fantasy Vol 5",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.954663347270383,
+            39.70642896121777
+        ]
+    },
+    {
+        "id": "it_6",
+        "title": "Italian Fantasy Vol 6",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.041091466857836,
+            43.116355035055946
+        ]
+    },
+    {
+        "id": "it_7",
+        "title": "Italian Fantasy Vol 7",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.954145730774448,
+            43.324342096704456
+        ]
+    },
+    {
+        "id": "it_8",
+        "title": "Italian Fantasy Vol 8",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.769729389806189,
+            43.45042528194895
+        ]
+    },
+    {
+        "id": "it_9",
+        "title": "Italian Fantasy Vol 9",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.629937216091758,
+            43.42478787761636
+        ]
+    },
+    {
+        "id": "it_10",
+        "title": "Italian Fantasy Vol 10",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.210465650183037,
+            41.59731333037369
+        ]
+    },
+    {
+        "id": "it_11",
+        "title": "Italian Fantasy Vol 11",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.857574448135598,
+            39.84633700717967
+        ]
+    },
+    {
+        "id": "it_12",
+        "title": "Italian Fantasy Vol 12",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.704301236031574,
+            40.37518581126961
+        ]
+    },
+    {
+        "id": "it_13",
+        "title": "Italian Fantasy Vol 13",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.048687610449836,
+            43.28979306568478
+        ]
+    },
+    {
+        "id": "it_14",
+        "title": "Italian Fantasy Vol 14",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.14993238643525,
+            40.48004475481389
+        ]
+    },
+    {
+        "id": "it_15",
+        "title": "Italian Fantasy Vol 15",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.718862887607152,
+            40.70516954489995
+        ]
+    },
+    {
+        "id": "it_16",
+        "title": "Italian Fantasy Vol 16",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.799149417935613,
+            40.60659742362581
+        ]
+    },
+    {
+        "id": "it_17",
+        "title": "Italian Fantasy Vol 17",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.208060830699429,
+            42.334708121591106
+        ]
+    },
+    {
+        "id": "it_18",
+        "title": "Italian Fantasy Vol 18",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.469112092682607,
+            40.77294306002049
+        ]
+    },
+    {
+        "id": "it_19",
+        "title": "Italian Fantasy Vol 19",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.702212770366097,
+            41.31120224992559
+        ]
+    },
+    {
+        "id": "it_20",
+        "title": "Italian Fantasy Vol 20",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.19045334234955,
+            42.5917047507972
+        ]
+    },
+    {
+        "id": "it_21",
+        "title": "Italian Fantasy Vol 21",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.329636732201074,
+            40.95931998044634
+        ]
+    },
+    {
+        "id": "it_22",
+        "title": "Italian Fantasy Vol 22",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.533969679389507,
+            39.69119115006709
+        ]
+    },
+    {
+        "id": "it_23",
+        "title": "Italian Fantasy Vol 23",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.491709978574043,
+            44.06611960210969
+        ]
+    },
+    {
+        "id": "it_24",
+        "title": "Italian Fantasy Vol 24",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.666074217315957,
+            43.81791971684828
+        ]
+    },
+    {
+        "id": "it_25",
+        "title": "Italian Fantasy Vol 25",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.3450831677271,
+            42.25626769217628
+        ]
+    },
+    {
+        "id": "it_26",
+        "title": "Italian Fantasy Vol 26",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.39412758894367,
+            39.76253535824972
+        ]
+    },
+    {
+        "id": "it_27",
+        "title": "Italian Fantasy Vol 27",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.565311006809374,
+            43.08776579089288
+        ]
+    },
+    {
+        "id": "it_28",
+        "title": "Italian Fantasy Vol 28",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.11664998481751,
+            41.027793585897875
+        ]
+    },
+    {
+        "id": "it_29",
+        "title": "Italian Fantasy Vol 29",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.950585996197269,
+            39.961258668321946
+        ]
+    },
+    {
+        "id": "it_30",
+        "title": "Italian Fantasy Vol 30",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.578792913328844,
+            42.52870023039053
+        ]
+    },
+    {
+        "id": "it_31",
+        "title": "Italian Fantasy Vol 31",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.506247063210859,
+            41.84169306112959
+        ]
+    },
+    {
+        "id": "it_32",
+        "title": "Italian Fantasy Vol 32",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.52285484778047,
+            42.554779383228166
+        ]
+    },
+    {
+        "id": "it_33",
+        "title": "Italian Fantasy Vol 33",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.55443002376549,
+            41.362459624378275
+        ]
+    },
+    {
+        "id": "it_34",
+        "title": "Italian Fantasy Vol 34",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.421287309148022,
+            42.25028559601752
+        ]
+    },
+    {
+        "id": "it_35",
+        "title": "Italian Fantasy Vol 35",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.52988182439071,
+            39.91760069635628
+        ]
+    },
+    {
+        "id": "it_36",
+        "title": "Italian Fantasy Vol 36",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.697067829787906,
+            44.01082186842599
+        ]
+    },
+    {
+        "id": "it_37",
+        "title": "Italian Fantasy Vol 37",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.436118228256126,
+            41.88733466115547
+        ]
+    },
+    {
+        "id": "it_38",
+        "title": "Italian Fantasy Vol 38",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.089725418470874,
+            40.70964795358433
+        ]
+    },
+    {
+        "id": "it_39",
+        "title": "Italian Fantasy Vol 39",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.052779235864403,
+            42.086176664322345
+        ]
+    },
+    {
+        "id": "it_40",
+        "title": "Italian Fantasy Vol 40",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.555781864263436,
+            40.50218513982346
+        ]
+    },
+    {
+        "id": "it_41",
+        "title": "Italian Fantasy Vol 41",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.903295310782502,
+            41.67556010249227
+        ]
+    },
+    {
+        "id": "it_42",
+        "title": "Italian Fantasy Vol 42",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.324922187581743,
+            39.43409900200169
+        ]
+    },
+    {
+        "id": "it_43",
+        "title": "Italian Fantasy Vol 43",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.083173901305088,
+            43.888897619767896
+        ]
+    },
+    {
+        "id": "it_44",
+        "title": "Italian Fantasy Vol 44",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.941844861102581,
+            40.93443089669735
+        ]
+    },
+    {
+        "id": "it_45",
+        "title": "Italian Fantasy Vol 45",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.555086037012252,
+            43.8491933165453
+        ]
+    },
+    {
+        "id": "it_46",
+        "title": "Italian Fantasy Vol 46",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.803963357042328,
+            39.765950146810226
+        ]
+    },
+    {
+        "id": "it_47",
+        "title": "Italian Fantasy Vol 47",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.493537824556498,
+            41.60893907735952
+        ]
+    },
+    {
+        "id": "it_48",
+        "title": "Italian Fantasy Vol 48",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.907842497645916,
+            44.23773620214715
+        ]
+    },
+    {
+        "id": "it_49",
+        "title": "Italian Fantasy Vol 49",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.992037094590524,
+            39.71132757663333
+        ]
+    },
+    {
+        "id": "it_50",
+        "title": "Italian Fantasy Vol 50",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.500921750008244,
+            41.14007076872587
+        ]
+    },
+    {
+        "id": "it_51",
+        "title": "Italian Fantasy Vol 51",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.043960898456497,
+            41.72666237864563
+        ]
+    },
+    {
+        "id": "it_52",
+        "title": "Italian Fantasy Vol 52",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.085296256872434,
+            39.56922194044549
+        ]
+    },
+    {
+        "id": "it_53",
+        "title": "Italian Fantasy Vol 53",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.03419142707823,
+            41.182083424345485
+        ]
+    },
+    {
+        "id": "it_54",
+        "title": "Italian Fantasy Vol 54",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.834502798454745,
+            44.11397760678442
+        ]
+    },
+    {
+        "id": "it_55",
+        "title": "Italian Fantasy Vol 55",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.975005765106332,
+            40.83974254277514
+        ]
+    },
+    {
+        "id": "it_56",
+        "title": "Italian Fantasy Vol 56",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.617463226527931,
+            42.98536165497041
+        ]
+    },
+    {
+        "id": "it_57",
+        "title": "Italian Fantasy Vol 57",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            12.89495170896435,
+            44.13001267726384
+        ]
+    },
+    {
+        "id": "it_58",
+        "title": "Italian Fantasy Vol 58",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.535246547657094,
+            41.06360161134463
+        ]
+    },
+    {
+        "id": "it_59",
+        "title": "Italian Fantasy Vol 59",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.953940452723483,
+            39.99400518765053
+        ]
+    },
+    {
+        "id": "it_60",
+        "title": "Italian Fantasy Vol 60",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            10.605087393216067,
+            43.78665717828353
+        ]
+    },
+    {
+        "id": "it_61",
+        "title": "Italian Fantasy Vol 61",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.078720679456296,
+            43.75929694892361
+        ]
+    },
+    {
+        "id": "it_62",
+        "title": "Italian Fantasy Vol 62",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.828090860508492,
+            42.90959910713378
+        ]
+    },
+    {
+        "id": "it_63",
+        "title": "Italian Fantasy Vol 63",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            14.205393062908293,
+            40.88854003976685
+        ]
+    },
+    {
+        "id": "it_64",
+        "title": "Italian Fantasy Vol 64",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            13.132754365185797,
+            42.5998184718992
+        ]
+    },
+    {
+        "id": "it_65",
+        "title": "Italian Fantasy Vol 65",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.984732511303896,
+            41.852796310919906
+        ]
+    },
+    {
+        "id": "it_66",
+        "title": "Italian Fantasy Vol 66",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Italy",
+        "coords": [
+            11.81810168955549,
+            41.235155553969015
+        ]
+    },
+    {
+        "id": 71,
+        "title": "Alpine Whispers",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Bern, Switzerland",
+        "coords": [
+            7.4474,
+            46.948
+        ]
+    },
+    {
+        "id": 72,
+        "title": "Zurich Tales",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Zurich, Switzerland",
+        "coords": [
+            8.5417,
+            47.3769
+        ]
+    },
+    {
+        "id": 80,
+        "title": "Berlin Legends",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Berlin, Germany",
+        "coords": [
+            13.405,
+            52.52
+        ]
+    },
+    {
+        "id": 81,
+        "title": "Munich Spells",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Munich, Germany",
+        "coords": [
+            11.582,
+            48.1351
+        ]
+    },
+    {
+        "id": 90,
+        "title": "Parisian Portals",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Paris, France",
+        "coords": [
+            2.3522,
+            48.8566
+        ]
+    },
+    {
+        "id": 91,
+        "title": "Lyon Labyrinths",
+        "year": 1985,
+        "genre": "Fantasy",
+        "author_birthplace": "Lyon, France",
+        "coords": [
+            4.8357,
+            45.764
+        ]
+    },
+    {
+        "id": 101,
+        "title": "Distant Echoes",
+        "year": 1995,
+        "genre": "Sci-Fi",
+        "author_birthplace": "New York, United States of America",
+        "coords": [
+            -74.006,
+            40.7128
+        ]
+    },
+    {
+        "id": 102,
+        "title": "Tokyo Future",
+        "year": 1995,
+        "genre": "Sci-Fi",
+        "author_birthplace": "Tokyo, Japan",
+        "coords": [
+            139.6503,
+            35.6762
+        ]
+    }
+]

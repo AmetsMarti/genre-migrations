@@ -1,10 +1,11 @@
+import simulationData from '../../assets/books_simulation.json';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    books: [],
-    status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+    books: simulationData,
+    status: 'succeeded', // Initialize with loaded simulation data
     error: null,
-    genreList: ["Sci-Fi", "Fantasy", "History"],
+    genreList: ["Fantasy", "Sci-Fi", "History", "History", "Thriller", "Horror", "Romance", "Historical", "Western", "Religion"],
 };
 
 const dataSlice = createSlice({

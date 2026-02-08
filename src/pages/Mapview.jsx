@@ -4,12 +4,14 @@ import fetchTimeSpanGenres from '../fetch_books';
 import Header from '../components/Header';
 import GenreSelector from '../components/GenreSelector';
 import TimelineSelector from '../components/TimelineSelector';
+import WorldMap from '../components/WorldMap';
 import { useState } from 'react';
 import { useFilters, useData } from '../store/hooks';
 
 import { Box, Typography, Stack } from '@mui/joy';
 
 function Mapview() {
+  const [isLoad, setIsLoad] = useState(false);
 
   // DATA actions and state
   const { genreList } = useData();
@@ -19,6 +21,7 @@ function Mapview() {
 
   return (
     <>
+      <WorldMap />
       <Stack direction="row" spacing={2} sx={{
         justifyContent: 'space-between',
         width: '100vw',
