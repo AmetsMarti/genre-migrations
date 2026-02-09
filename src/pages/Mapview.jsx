@@ -1,64 +1,29 @@
 import React from 'react';
-import Mockup from './Mockup';
-import fetchTimeSpanGenres from '../fetch_books';
 import Header from '../components/Header';
 import GenreSelector from '../components/GenreSelector';
-import TimelineSelector from '../components/TimelineSelector';
+import HistogramTimeline from '../components/HistogramTimeline';
 import WorldMap from '../components/WorldMap';
-import { useState } from 'react';
-import { useFilters, useData } from '../store/hooks';
+import { Box } from '@mui/joy';
 
-import { Box, Typography, Stack } from '@mui/joy';
-
-function Mapview() {
-  const [isLoad, setIsLoad] = useState(false);
-
-  // DATA actions and state
-  const { genreList } = useData();
-
-  // FILTER actions and state
-  const { timeSpan, selectedGenre } = useFilters();
-
+const Mapview = () => {
   return (
-    <>
+    <Box sx={{ width: '100vw', height: '100vh', position: 'relative' }}>
+      {/* BACKGROUND MAP */}
       <WorldMap />
-      <Stack direction="row" spacing={2} sx={{
-        justifyContent: 'space-between',
-        width: '100vw',
-        height: '100vh',
-        p: "25px"
 
-      }}>
-
-        <Stack spacing={2} sx={{
-          justifyContent: 'space-between',
-          height: '100%',
-          width: "100%",
-          borderRadius: "10px",
-        }}>
-
+      {/* TOP UI OVERLAY */}
+      <Box className="top-overlay-container">
+        <Box className="glass-card">
           <GenreSelector />
-          <TimelineSelector />
-        </Stack>
-        <Stack>
-          <Box sx={{
-            width: "200px",
-            borderRadius: "10px",
-            backgroundColor: "rgba(255, 255, 255, 0.08)",
-            height: "100%"
-          }}>
-            Right
-          </Box>
-        </Stack>
+        </Box>
+      </Box>
 
-      </Stack >
-
-    </>
+      {/* BOTTOM TIMELINE */}
+      <Box className="bottom-panel" sx={{ px: "100px" }}>
+        <HistogramTimeline />
+      </Box>
+    </Box>
   );
-
-
-
-
-}
+};
 
 export default Mapview;

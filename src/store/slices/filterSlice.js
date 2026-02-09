@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    timeSpan: [1900, 2020],
+    timeSpan: [1980, 1990],
     selectedGenre: null,
     selectedRegion: null,
 };

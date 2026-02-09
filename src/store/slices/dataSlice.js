@@ -5,7 +5,7 @@ const initialState = {
     books: simulationData,
     status: 'succeeded', // Initialize with loaded simulation data
     error: null,
-    genreList: ["Fantasy", "Sci-Fi", "History", "History", "Thriller", "Horror", "Romance", "Historical", "Western", "Religion"],
+    genreList: ["Fantasy", "Sci-Fi", "History", "Thriller", "Horror", "Romance", "Western", "Religion"],
 };
 
 const dataSlice = createSlice({

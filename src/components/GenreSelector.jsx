@@ -1,28 +1,31 @@
-import { Box, Button, Stack, Typography } from "@mui/joy";
-import { useFilters, useData } from "../store/hooks";
+import React from 'react';
+import { Box, Button, Typography, Stack } from '@mui/joy';
+import { useFilters, useData } from '../store/hooks';
 
-function GenreSelector() {
+const GenreSelector = () => {
     const { genreList } = useData();
     const { selectedGenre, updateGenre } = useFilters();
 
     return (
-        <Box>
-            <Typography variant="h6">Genre: {selectedGenre || 'None'}</Typography>
-            <Stack direction="row" spacing={2}>
-                {genreList.length > 0 ?
-                    genreList.map((genre) => (
-                        <Button
-                            key={genre}
-                            onClick={() => updateGenre(genre)}
-                            variant={genre === selectedGenre ? 'solid' : 'outlined'}
-                        >
-                            {genre}
-                        </Button>
-                    ))
-                    : <Typography variant="h6">No genres available</Typography>}
-            </Stack>
-        </Box>
-    )
-}
+        <Stack direction="row" spacing={1} sx={{ overflowX: 'auto', py: 0.5, '::-webkit-scrollbar': { display: 'none' } }}>
+            {genreList.map((genre) => (
+                <Button
+                    key={genre}
+                    size="sm"
+                    variant={selectedGenre === genre ? "soft" : "plain"}
+                    color={selectedGenre === genre ? "primary" : "neutral"}
+                    onClick={() => updateGenre(genre)}
+                    sx={{
+                        borderRadius: 'var(--radius-md)',
+                        fontWeight: selectedGenre === genre ? 700 : 500,
+                        whiteSpace: 'nowrap'
+                    }}
+                >
+                    {genre}
+                </Button>
+            ))}
+        </Stack>
+    );
+};
 
 export default GenreSelector;
