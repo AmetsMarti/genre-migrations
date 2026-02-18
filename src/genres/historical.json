@@ -15,5 +15,12 @@
             "chronicle",
             "monarchy",
             "revolution"
+        ],
+        "themes": [
+            "Ancient Civilizations",
+            "Medieval",
+            "Renaissance",
+            "World Wars",
+            "Colonial Era"
         ]
     }

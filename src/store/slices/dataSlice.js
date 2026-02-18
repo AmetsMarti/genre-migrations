@@ -1,11 +1,17 @@
-import simulationData from '../../assets/books_simulation.json';
+import simulationData from '../../assets/real_data.json';
 import { createSlice } from '@reduxjs/toolkit';
 
+// Add id to each book if not present
+const booksWithIds = simulationData.map((item, index) => ({
+    ...item,
+    id: item.id || index + 1,
+}));
+
 const initialState = {
-    books: simulationData,
-    status: 'succeeded', // Initialize with loaded simulation data
+    books: booksWithIds,
+    status: 'succeeded',
     error: null,
-    genreList: ["Fantasy", "Sci-Fi", "History", "Thriller", "Horror", "Romance", "Western", "Religion"],
+    genreList: [...new Set(booksWithIds.map(item => item.Genero))].sort(),
 };
 
 const dataSlice = createSlice({

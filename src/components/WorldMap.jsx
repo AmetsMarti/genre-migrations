@@ -24,14 +24,14 @@ const WorldMap = () => {
     // --- DATA PROCESSING FOR CHOROPLETH ---
     const countryCounts = useMemo(() => {
         const filteredBooks = books.filter(book => {
-            const yearMatch = book.year >= timeSpan[0] && book.year <= timeSpan[1];
-            const genreMatch = !selectedGenre || book.genre === selectedGenre;
+            const yearMatch = book.Año >= timeSpan[0] && book.Año <= timeSpan[1];
+            const genreMatch = !selectedGenre || book.Genero === selectedGenre;
             return yearMatch && genreMatch;
         });
 
         const counts = {};
         filteredBooks.forEach(b => {
-            const country = b.author_birthplace.split(', ').pop();
+            const country = b.Pais_Autor.split(', ').pop();
             counts[country] = (counts[country] || 0) + 1;
         });
         return counts;

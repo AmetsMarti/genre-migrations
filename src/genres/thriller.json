@@ -13,5 +13,12 @@
         "terrorist",
         "danger",
         "adventure"
+    ],
+    "themes": [
+        "Psychological",
+        "Crime",
+        "Espionage",
+        "Techno-Thriller",
+        "Action"
     ]
 }

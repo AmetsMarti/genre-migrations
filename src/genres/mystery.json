@@ -13,5 +13,12 @@
         "riddle",
         "pulp",
         "police procedural"
+    ],
+    "themes": [
+        "Noir",
+        "Cozy Mystery",
+        "Police Procedural",
+        "Hardboiled",
+        "Legal Thriller"
     ]
 }

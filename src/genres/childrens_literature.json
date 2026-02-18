@@ -12,5 +12,12 @@
         "fable",
         "nursery",
         "adolescence"
+    ],
+    "themes": [
+        "Fairy Tales",
+        "Picture Books",
+        "Young Adult",
+        "Educational",
+        "Adventure"
     ]
 }

@@ -8,9 +8,23 @@ const GenreSelector = () => {
 
     return (
         <Stack direction="row" spacing={1} sx={{ overflowX: 'auto', py: 0.5, '::-webkit-scrollbar': { display: 'none' } }}>
-            {genreList.map((genre) => (
+            <Button
+                key={`all-genres`}
+                size="sm"
+                variant={selectedGenre === null ? "soft" : "plain"}
+                color={selectedGenre === null ? "primary" : "neutral"}
+                onClick={() => updateGenre(null)}
+                sx={{
+                    borderRadius: 'var(--radius-md)',
+                    fontWeight: selectedGenre === null ? 700 : 500,
+                    whiteSpace: 'nowrap'
+                }}
+            >
+                All genres
+            </Button>
+            {genreList.map((genre, index) => (
                 <Button
-                    key={genre}
+                    key={`${genre}-${index}`}
                     size="sm"
                     variant={selectedGenre === genre ? "soft" : "plain"}
                     color={selectedGenre === genre ? "primary" : "neutral"}

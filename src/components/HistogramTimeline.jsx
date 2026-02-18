@@ -9,14 +9,14 @@ const HistogramTimeline = () => {
     const { books } = useData();
     const { timeSpan, updateTimeSpan, selectedGenre } = useFilters();
 
-    const filteredBooksByGenre = books.filter(book => book.genre === selectedGenre);
+    const filteredBooksByGenre = books.filter(book => book.Genero === selectedGenre);
 
     // Process data for histogram
     const histogramData = useMemo(() => {
         if (!books.length) return [];
         const counts = {};
         filteredBooksByGenre.forEach(book => {
-            counts[book.year] = (counts[book.year] || 0) + 1;
+            counts[book.Año] = (counts[book.Año] || 0) + 1;
         });
 
         const years = Object.keys(counts).map(Number).sort((a, b) => a - b);

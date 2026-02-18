@@ -17,5 +17,12 @@
         "enchantment",
         "mythic",
         "supernatural"
+    ],
+    "themes": [
+        "High Fantasy",
+        "Dark Fantasy",
+        "Urban Fantasy",
+        "Epic Fantasy",
+        "Magical Realism"
     ]
 }

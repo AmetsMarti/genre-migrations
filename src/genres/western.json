@@ -11,5 +11,12 @@
         "pioneer",
         "gunfighter",
         "americana"
+    ],
+    "themes": [
+        "Outlaw",
+        "Gold Rush",
+        "Native American",
+        "Cowboy",
+        "Bounty Hunter"
     ]
 }

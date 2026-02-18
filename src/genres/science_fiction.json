@@ -19,5 +19,12 @@
         "starship",
         "galactic",
         "post-apocalyptic"
+    ],
+    "themes": [
+        "Space Opera",
+        "Cyberpunk",
+        "Time Travel",
+        "Dystopian",
+        "Hard Sci-Fi"
     ]
 }
