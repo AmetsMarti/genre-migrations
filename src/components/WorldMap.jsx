@@ -146,7 +146,8 @@ const WorldMap = () => {
                 height: '100vh',
                 zIndex: -1,
                 overflow: 'hidden',
-                bgcolor: '#ffffff'
+                bgcolor: 'white',
+                clipPath: 'inset(0px 360px 0px 340px)'
             }}
         >
             <svg

@@ -111,7 +111,7 @@ const ScatterPlot = () => {
     }, [filteredBooks, tsneCoords, isComputing, getColor]);
 
     return (
-        <Box sx={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
+        <Box sx={{ width: '100%', height: '100%', position: 'relative', overflow: 'visible' }}>
             {/* Semantic Frame */}
             <Typography level="body-xs" sx={{ position: 'absolute', bottom: 4, right: 12, color: 'var(--text-muted)', fontSize: '10px', opacity: 0.8 }}>
                 Dimension 1 →
@@ -161,6 +161,7 @@ const ScatterPlot = () => {
                     bgcolor: 'rgba(15, 23, 42, 0.95)',
                     backdropFilter: 'blur(4px)',
                     p: 1.5,
+                    zIndex: 100,
                     borderRadius: 'md',
                     zIndex: 100,
                     pointerEvents: 'none',
@@ -187,12 +188,6 @@ const ScatterPlot = () => {
                     <Typography level="body-xs" sx={{ color: 'rgba(255,255,255,0.5)', mt: 1, fontSize: '10px', lineHeight: 1.4 }}>
                         {hoveredBook.Temas.split('|').join(' • ')}
                     </Typography>
-
-                    {hoveredBook.Pais_Autor !== hoveredBook.Pais_Publicacion && (
-                        <Typography level="body-xs" sx={{ mt: 1.5, pt: 1, borderTop: '1px solid rgba(255,255,255,0.1)', color: 'success.300', fontWeight: 600 }}>
-                            MIGRATION: {hoveredBook.Pais_Autor} ➔ {hoveredBook.Pais_Publicacion}
-                        </Typography>
-                    )}
                 </Box>
             )}
 
@@ -200,7 +195,7 @@ const ScatterPlot = () => {
             <Box sx={{
                 position: 'absolute', bottom: 16, left: 16,
                 display: 'flex', flexDirection: 'column', gap: 1,
-                zIndex: 1, pointerEvents: 'none',
+                zIndex: 100, pointerEvents: 'none',
                 bgcolor: 'rgba(255,255,255,0.4)', backdropFilter: 'blur(2px)',
                 p: 1.5, borderRadius: 'md'
             }}>
