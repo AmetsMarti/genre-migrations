@@ -16,5 +16,17 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api\/openlibrary/, ''),
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'tsne-worker': ['./src/workers/tsneWorker.js']
+        }
+      }
+    },
+    worker: {
+      format: 'es'
+    }
   }
 })
