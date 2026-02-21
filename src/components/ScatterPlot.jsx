@@ -163,7 +163,6 @@ const ScatterPlot = () => {
                     p: 1.5,
                     zIndex: 100,
                     borderRadius: 'md',
-                    zIndex: 100,
                     pointerEvents: 'none',
                     boxShadow: '0 10px 25px -5px rgba(0,0,0,0.4)',
                     minWidth: 240,
