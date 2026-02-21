@@ -12,6 +12,8 @@ const initialState = {
     status: 'succeeded',
     error: null,
     genreList: [...new Set(booksWithIds.map(item => item.Genero))].sort(),
+    tsneCoords: {},
+    tsneStatus: 'idle', // 'idle' | 'computing' | 'ready'
 };
 
 const dataSlice = createSlice({
@@ -32,8 +34,14 @@ const dataSlice = createSlice({
             state.status = 'failed';
             state.error = action.payload;
         },
+        setTsneCoords: (state, action) => {
+            state.tsneCoords = action.payload;
+        },
+        setTsneStatus: (state, action) => {
+            state.tsneStatus = action.payload;
+        },
     },
 });
 
-export const { setGenreList, setBooks, setLoading, setError } = dataSlice.actions;
+export const { setGenreList, setBooks, setLoading, setError, setTsneCoords, setTsneStatus } = dataSlice.actions;
 export default dataSlice.reducer;

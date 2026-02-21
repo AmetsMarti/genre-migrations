@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setTimeSpan, setSelectedGenre, setSelectedRegion } from './slices/filterSlice';
-import { setBooks, setGenreList, setLoading, setError } from './slices/dataSlice';
+import { setBooks, setGenreList, setLoading, setError, setTsneCoords, setTsneStatus } from './slices/dataSlice';
+import { setUseWorker, setAppLoading } from './slices/appSettingsSlice';
 
 // --- Filter Level ---
 export const useFilters = () => {
@@ -26,5 +27,19 @@ export const useData = () => {
         updateGenreList: (list) => dispatch(setGenreList(list)),
         startLoading: () => dispatch(setLoading()),
         reportError: (err) => dispatch(setError(err)),
+        updateTsneCoords: (coords) => dispatch(setTsneCoords(coords)),
+        updateTsneStatus: (status) => dispatch(setTsneStatus(status)),
+    };
+};
+
+// --- App Settings Level ---
+export const useAppSettings = () => {
+    const dispatch = useDispatch();
+    const settings = useSelector((state) => state.appSettings);
+
+    return {
+        ...settings,
+        toggleUseWorker: (value) => dispatch(setUseWorker(value)),
+        setAppLoading: (value) => dispatch(setAppLoading(value)),
     };
 };

@@ -1,12 +1,12 @@
 /**
- * Web Worker for real-time t-SNE computation based on topic co-occurrence.
- * Optimized for performance with faster preprocessing and convergence detection.
+ * Utility function to compute t-SNE directly in the main thread.
+ * Optimized for performance with efficient preprocessing and iteration control.
  */
 import tsnejs from 'tsne';
 
 const { tSNE } = tsnejs;
 
-// Cache for parsed topics to avoid repeated string operations
+// Cache for parsed topics
 const topicCache = new Map();
 
 function parseTopics(temasString) {
@@ -25,12 +25,9 @@ function parseTopics(temasString) {
     return topics;
 }
 
-self.onmessage = function (e) {
-    const { books } = e.data;
-
+export function computeTSNEDirect(books) {
     if (!books || books.length < 3) {
-        self.postMessage({ tsneCoords: {}, done: true });
-        return;
+        return {};
     }
 
     try {
@@ -71,7 +68,7 @@ self.onmessage = function (e) {
             dataVectors[i] = Array.from(vec);
         }
 
-        // --- 3. Run t-SNE with optimized parameters and early stopping ---
+        // --- 3. Run t-SNE with optimized parameters ---
         const n = books.length;
         const perplexity = Math.min(20, Math.max(5, Math.floor(n / 5)));
         
@@ -95,7 +92,7 @@ self.onmessage = function (e) {
 
         model.initDataRaw(dataVectors);
 
-        // Run with progress updates
+        // Run iterations
         for (let i = 0; i < nIter; i++) {
             model.step();
         }
@@ -127,8 +124,9 @@ self.onmessage = function (e) {
             ];
         }
 
-        self.postMessage({ tsneCoords, done: true });
+        return tsneCoords;
     } catch (err) {
-        self.postMessage({ tsneCoords: {}, done: true, error: err.message });
+        console.error('Direct t-SNE computation error:', err);
+        return {};
     }
-};
+}
