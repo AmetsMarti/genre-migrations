@@ -46,41 +46,54 @@ const InsightsPanel = () => {
 
         setLoadingBook(true);
         
-        // Try to fetch the most popular book from the filtered set
+       
         const fetchMostFamousBook = async () => {
             try {
-                // Get a random sample of books and check their popularity
-                const sample = filteredBooks.sort(() => 0.5 - Math.random()).slice(0, 10);
+                // Sort by edition count (popularity proxy) and fetch details for top candidates
+                const sample = filteredBooks.sort(b => b.edition_count || 0)
                 
                 let bestBook = null;
                 let maxEditions = 0;
 
-                for (const book of sample) {
-                    try {
-                        const response = await axios.get(
-                            `https://openlibrary.org/search.json?title=${encodeURIComponent(book.Titulo)}&author=${encodeURIComponent(book.Autor)}&limit=1`
-                        );
+                const book = sample[0]; // Start with the top candidate based on local data
+
+        
+                try {
+                    const response = await axios.get(
+                        `https://openlibrary.org/search.json?title=${encodeURIComponent(book.Titulo)}&author=${encodeURIComponent(book.Autor)}&limit=1`
+                    );
+                    
+                    if (response.data.docs && response.data.docs.length > 0) {
+                        const doc = response.data.docs[0];
+                        const editions = doc.edition_count || 0;
                         
-                        if (response.data.docs && response.data.docs.length > 0) {
-                            const doc = response.data.docs[0];
-                            const editions = doc.edition_count || 0;
+                        if (editions > maxEditions) {
+                            maxEditions = editions;
+                            let coverUrl = null;
                             
-                            if (editions > maxEditions) {
-                                maxEditions = editions;
-                                bestBook = {
-                                    titulo: book.Titulo,
-                                    autor: book.Autor,
-                                    editions: editions,
-                                    genero: book.Genero,
-                                    año: book.Año
-                                };
+                            // Get cover image URL from OpenLibrary
+                            if (doc.cover_edition_key) {
+                                coverUrl = `https://covers.openlibrary.org/b/olid/${doc.cover_edition_key}-M.jpg`;
+                            } else if (doc.cover_i) {
+                                coverUrl = `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`;
+                            } else if (doc.isbn && doc.isbn[0]) {
+                                coverUrl = `https://covers.openlibrary.org/b/isbn/${doc.isbn[0]}-M.jpg`;
                             }
+                            
+                            bestBook = {
+                                titulo: book.Titulo,
+                                autor: book.Autor,
+                                editions: editions,
+                                genero: book.Genero,
+                                año: book.Año,
+                                coverUrl: coverUrl
+                            };
                         }
-                    } catch (err) {
-                        // Continue if a single book fails
-                        continue;
                     }
+                } catch (err) {
+                    console.warn(`Failed to fetch data for "${book.Titulo}" by ${book.Autor}:`, err);
                 }
+            
 
                 setTopBook(bestBook || filteredBooks[0]);
             } catch (err) {
@@ -177,8 +190,40 @@ const InsightsPanel = () => {
                         p: 1.5, 
                         bgcolor: 'rgba(255,255,255,0.05)', 
                         borderRadius: 'md',
-                        border: '1px solid rgba(255,255,255,0.1)'
+                        border: '1px solid rgba(255,255,255,0.1)',
+                        zIndex: 100
                     }}>
+                        {topBook.coverUrl && (
+                            <Box sx={{ 
+                                mb: 1, 
+                                overflow: 'hidden', 
+                                borderRadius: 'md',
+                                bgcolor: 'rgba(255,255,255,0.05)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                minHeight: '140px'
+                            }}>
+                                <img 
+                                    src={topBook.coverUrl} 
+                                    alt={topBook.titulo}
+                                    style={{
+                                        width: '50%',
+                                        height: '50%',
+                                        objectFit: 'contain',
+                                        borderRadius: '4px',
+                                        display: 'block'
+                                    }}
+                                    onError={(e) => {
+                                        console.warn('Cover image failed to load:', topBook.coverUrl);
+                                        e.target.style.display = 'none';
+                                    }}
+                                    onLoad={(e) => {
+                                        console.log('Cover image loaded:', topBook.coverUrl);
+                                    }}
+                                />
+                            </Box>
+                        )}
                         <Typography 
                             level="body-sm" 
                             sx={{ fontWeight: 600, mb: 0.5, fontSize: '11px', lineHeight: 1.3 }}
